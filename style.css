@@ -1,12 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
-:root {
-  --primary-color: #356aff;
-  --bg-color: #fff;
-  --text-color: #000;
-  --light-text-color: #a5a5a5;
-  --body-bg-color: #f5f5f5;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,14 +11,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--body-bg-color);
-  color: var(--text-color);
+  background-color: #f5f5f5;
+  color:  #000;
 }
 .container {
   width: 400px;
   padding: 20px;
   border-radius: 10px;
-  background-color: var(--bg-color);
+  background-color:  #fff;
 }
 .container .heading {
   font-size: 25px;
@@ -35,7 +28,7 @@ body {
 .container .options select {
   width: 100%;
   padding: 10px;
-  border: 1px solid var(--light-text-color);
+  border: 1px solid  #a5a5a5;
   border-radius: 5px;
   outline: none;
 }
@@ -47,13 +40,13 @@ body {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: var(--light-text-color);
+  color:  #a5a5a5;
 }
 .container .line {
   position: relative;
   width: 100%;
   height: 1px;
-  background-color: var(--light-text-color);
+  background-color:  #a5a5a5;
   opacity: 0.5;
   margin: 30px 0;
 }
@@ -73,13 +66,16 @@ body {
   font-weight: 500;
   cursor: pointer;
   color: #fff;
-  background-color: var(--primary-color);
+  background-color:  #356aff;
+  &:hover{
+background-color: #1c52e6;
+  }
 }
 .btn ion-icon {
   font-size: 30px;
 }
 .btn:disabled {
-  background-color: var(--light-text-color);
+  background-color:  #a5a5a5;
   cursor: not-allowed;
 }
 .container .record img {
@@ -97,17 +93,17 @@ body {
   width: 100%;
   min-height: 200px;
   padding: 10px;
-  border: 1px solid var(--light-text-color);
+  border: 1px solid #a5a5a5;
   border-radius: 5px;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
-  color: var(--text-color);
+  color:  #000;
 }
 .container .result p {
   display: inline;
   margin-left: 3px;
-  color: var(--light-text-color);
+  color:  #a5a5a5;
 }
 .buttons {
   display: flex;

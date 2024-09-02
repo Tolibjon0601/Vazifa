@@ -30,18 +30,18 @@ function speechToText() {
     recognition.start();
     recognition.onresult = (event) => {
       const speechResult = event.results[0][0].transcript;
-      //detect when intrim results
+
       if (event.results[0].isFinal) {
         result.innerHTML += " " + speechResult;
         result.querySelector("p").remove();
       } else {
-        //creative p with class interim if not already there
+
         if (!document.querySelector(".interim")) {
           const interim = document.createElement("p");
           interim.classList.add("interim");
           result.appendChild(interim);
         }
-        //update the interim p with the speech result
+
         document.querySelector(".interim").innerHTML = " " + speechResult;
       }
       downloadBtn.disabled = false;
